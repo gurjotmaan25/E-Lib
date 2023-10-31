@@ -1,13 +1,141 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.header{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.head{
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  flex: 1;
+  margin-left: 20px;
+}
+.add{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  margin-right: 20px;
+}
+.add:hover{
+  text-decoration: underline;
+}
+.home{
+  text-align: center;
+}
+.home h1{
+  text-decoration: underline;
+  margin: 10px 0;
+}
+.listbody{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.nobook{
+  color: #666;
+}
+.list{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 10px 10px;
+  margin: 0px 0  ;
+}
+.list:hover{
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+.bookdet{
+  flex: 1;
+  text-align: left;
+  margin: 0 10px;
+}
+.bookdet h2{
+  text-transform: uppercase;
+}
+.bookdet p{
+  color: #666;
+}
+.bookbtn{
+  margin: 0 10px;
+}
+.bookbtn button{
+  margin: 0 5px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  padding: 10px 5px;
+}
+.bookbtn button:hover{
+  cursor: pointer;
+  background-color: #666;
+  border-radius: 5px;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* BOOK DETAILS  */
+.details{
+  text-align: center;
+}
+.detbody{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  margin-top: 10px;
+}
+.detbody h4{
+  font-weight: normal;
+  color: #666;
+}
+.detbody p{
+  padding: 0px 10px;
+  margin: 10px;
+}
+.detbody input{
+  width: 40%;
+  margin: 5px;
+  height: 20px;
+  font-size: 19px;
+  padding: 5px;
+}
+.detbody textarea{
+  width: 40%;
+  margin: 5px;
+  resize: vertical;
+  font-size: 19px;
+  padding: 5px;
+}
+.detbody button{
+  background: none;
+  border: none;
+  margin: 5px;
+  padding: 5px 15px;
+  font-size: 18px;
+  /* width: 10%; */
+}
+.detbody button:hover{
+  cursor: pointer;
+  background-color: #666;
+  color: white;
+  border-radius: 8px;
 }
